@@ -1,0 +1,66 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p::p, par l {comp label2::l::776:x, seq l {par t {seq t {space :26:26:p, comp lblOutput::::736:x}, seq {par l {seq {par l {comp lblPastTenseVerb::::236:x, comp lblAdjective::::236:x}, space :::p, par l {comp txtPastTenseVerb::::148:x, comp txtAjective::::148:x}, space :p::p, par l {comp lblColor::::190:x, comp lblNoun::::190:x}}, seq {space :0:261:x, comp btnGenerator:::p:325:p}}, space :p::p, par l {comp txtNoun::::170:x, comp txtColor::::170:x}}}, space :p:14:p}}, space :p::p}}"
+			"$verticalGroup": "par l {seq l {space :p::p, comp label2:::::x, space :p:15:p, par b {comp txtPastTenseVerb::b:::x, comp txtColor::b:::x, comp lblAdjective::b:::x, comp lblColor::b:::x}, space :p:34:p, par b {comp txtAjective::b:::x, comp txtNoun::b:::x, comp lblPastTenseVerb::b:::x, comp lblNoun::b:::x}, space :p:41:p, comp btnGenerator:::::x, space :p:28:p, comp lblOutput::::97:x, space :p:19:p}}"
+		} ) {
+			name: "this"
+			"title": "Andrei's MadLibs"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtPastTenseVerb"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtColor"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtAjective"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtNoun"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnGenerator"
+				"text": "Сгенерировать всякую ерунду"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGeneratorActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblOutput"
+				"text": "Здесь появится результат вашей ерунды..."
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "ГЕНЕРАТОР СЛОВЕСТНОЙ ЕРУНДЫ ОТ АНДРЕЯ"
+				"horizontalAlignment": 0
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblAdjective"
+				"text": "Введите прилагательное"
+				"horizontalAlignment": 4
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblColor"
+				"text": "Введите цвет"
+				"horizontalAlignment": 4
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblNoun"
+				"text": "Введите существительное"
+				"horizontalAlignment": 4
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblPastTenseVerb"
+				"text": "Введите глагол прошедшего времени"
+				"horizontalAlignment": 4
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 790, 360 )
+		} )
+	}
+}
